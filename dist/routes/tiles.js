@@ -1,0 +1,47 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var tiles = exports.tiles = {
+  tile00: { name: 'Free Parking', value: 0, type: 'free-parking-square' },
+  tile01: { name: 'Kentucky Avenue', value: 220, type: 'property' },
+  tile02: { name: 'Chance', value: 0, type: 'chance' },
+  tile03: { name: 'Indiana Avenue', value: 220, type: 'property' },
+  tile04: { name: 'Illinois Avenue', value: 240, type: 'property' },
+  tile05: { name: 'B. & O. Railroad', value: 200, type: 'railroad' },
+  tile06: { name: 'Atlantic Avenue', value: 260, type: 'property' },
+  tile07: { name: 'Ventnor Avenue', value: 260, type: 'property' },
+  tile08: { name: 'Water Works', value: 150, type: 'utility' },
+  tile09: { name: 'Marvin Gardens', value: 280, type: 'property' },
+  tile010: { name: 'Go To Jail', value: 0, type: 'go-to-jail-square' },
+  tile10: { name: 'New York Avenue', value: 200, type: 'property' },
+  tile110: { name: 'Pacific Avenue', value: 300, type: 'property' },
+  tile20: { name: 'Tennessee Avenue', value: 180, type: 'property' },
+  tile210: { name: 'North Carolina Avenue', value: 300, type: 'property' },
+  tile30: { name: 'Community Chest', value: 0, type: 'community-chest' },
+  tile310: { name: 'Community Chest', value: 0, type: 'community-chest' },
+  tile40: { name: 'St. James Place', value: 180, type: 'property' },
+  tile410: { name: 'Pennsylvania Avenue', value: 320, type: 'property' },
+  tile50: { name: 'Pennsylvania Railroad', value: 200, type: 'railroad' },
+  tile510: { name: 'Short Line', value: 200, type: 'railroad' },
+  tile60: { name: 'Virginia Avenue', value: 160, type: 'property' },
+  tile610: { name: 'Chance', value: 0, type: 'chance' },
+  tile70: { name: 'States Avenue', value: 140, type: 'property' },
+  tile710: { name: 'Park Place', value: 350, type: 'property' },
+  tile80: { name: 'Electric Company', value: 150, type: 'utility' },
+  tile810: { name: 'Luxury Tax', value: 0, type: 'luxury-tax' },
+  tile90: { name: 'St. Charles Place', value: 140, type: 'property' },
+  tile910: { name: 'Boardwalk', value: 400, type: 'property' },
+  tile100: { name: 'In Jail', value: 0, type: 'in-jail-square' },
+  tile101: { name: 'Connecticut Avenue', value: 120, type: 'property' },
+  tile102: { name: 'Vermont Avenue', value: 100, type: 'property' },
+  tile103: { name: 'Chance', value: 0, type: 'chance' },
+  tile104: { name: 'Oriental Avenue', value: 100, type: 'property' },
+  tile105: { name: 'Reading Railroad', value: 200, type: 'railroad' },
+  tile106: { name: 'Income Tax', value: 0, type: 'income-tax' },
+  tile107: { name: 'Baltic Avenue', value: 60, type: 'property' },
+  tile108: { name: 'Community Chest', value: 0, type: 'community-chest' },
+  tile109: { name: 'Mediterranean Avenue', value: 60, type: 'property' },
+  tile1010: { name: 'Go', value: 0, type: 'go' }
+};
