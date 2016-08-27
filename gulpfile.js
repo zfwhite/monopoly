@@ -18,6 +18,10 @@ gulp.task('js', function() {
     .pipe(babel({presets: ['es2015']}))
     .pipe(gulp.dest('./dist/routes'));
 
+  gulp.src('./public/*.js')
+    .pipe(babel({presets: ['es2015']}))
+    .pipe(gulp.dest('./dist/public'));
+
   gulp.src('app.js')
     .pipe(babel({presets: ['es2015']}))
     .pipe(gulp.dest('./dist'));
@@ -25,10 +29,15 @@ gulp.task('js', function() {
 
 gulp.watch('./routes/*.js', ['js'])
   .on('change', function(event) {
-    console.log('JavaScript converted');
+    console.log('Routes js converted');
+  });
+
+gulp.watch('./public/*.js', ['js'])
+  .on('change', function(event) {
+    console.log('Public js converted');
   });
 
   gulp.watch('app.js', ['js'])
     .on('change', function(event) {
-      console.log('JavaScript converted');
+      console.log('Server js converted');
     });
