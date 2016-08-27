@@ -12,25 +12,28 @@ function tileArray(list) {
 
 const Board = function() {
   const self = this;
+  this.properties = [];
   this.board = function() {
     var tileList = tileArray(tiles);
-    console.log(tileList);
     for (let row = 0; row < 11; row++) {
       for (let column = 0; column < 11; column++) {
         const checkTile = 'tile' + row.toString() + column.toString();
-        if (tileList.indexOf(checkTile) > -1) {
-          console.log(checkTile);
-        }
+        const position = [row, column];
+        tileList.forEach(function(square) {
+          if (square.tileId === checkTile) {
+            self.properties.push(Property(position, square.value, square.name));
+          }
+        })
       }
     }
-    // console.log(tileArray(tiles));
   }
 }
 
-const Property = (row, column) => ({
+const Property = (position, value, name) => ({
+  tilePosition: position,
   tileOwner: '',
-  tileName: '',
-  tileValue: 0,
+  tileName: name,
+  tileValue: value,
   tileHouses: 0,
   tileHotel: false
 });
